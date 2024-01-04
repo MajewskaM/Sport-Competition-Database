@@ -1,0 +1,27 @@
+USE CompetitionsDataBase;
+
+DROP TABLE IF EXISTS allows_for;
+DROP TABLE IF EXISTS has_scored;
+DROP TABLE IF EXISTS scored_by;
+DROP TABLE IF EXISTS enrolled_to;
+DROP TABLE IF EXISTS participate_in;
+DROP TABLE IF EXISTS Licenses;
+DROP TABLE IF EXISTS Registrations;
+DROP TABLE IF EXISTS Athletes;
+DROP TABLE IF EXISTS Trainers;
+DROP TABLE IF EXISTS Results;
+DROP TABLE IF EXISTS Scored_Places;
+DROP TABLE IF EXISTS Events;
+DROP TABLE IF EXISTS Disciplines;
+DROP TABLE IF EXISTS Competitions;
+DROP TABLE IF EXISTS Stadiums;
+DROP TABLE IF EXISTS Universities;
+DROP VIEW IF EXISTS HealthSciencesResults;
+
+USE master;
+GO
+ALTER DATABASE CompetitionsDataBase 
+SET SINGLE_USER 
+WITH ROLLBACK IMMEDIATE;
+GO
+DROP DATABASE CompetitionsDataBase;
