@@ -75,7 +75,7 @@ CREATE TABLE Trainers (
     trainerID INT IDENTITY PRIMARY KEY,
     name VARCHAR(20) NOT NULL CHECK(LEN(name) >= 2),
     surname VARCHAR(50) NOT NULL CHECK(LEN(surname) >= 2),
-    telephone_number VARCHAR(15) UNIQUE CHECK(LEN(telephone_number) = 11 AND telephone_number LIKE '___-___-___'),
+    telephone_number VARCHAR(15) UNIQUE CHECK(telephone_number LIKE '[0-9][0-9][0-9]-[0-9][0-9][0-9]-[0-9][0-9][0-9]'),
     email VARCHAR(40) UNIQUE CHECK(LEN(email) >= 5 AND email LIKE '%@%')
 );
 
