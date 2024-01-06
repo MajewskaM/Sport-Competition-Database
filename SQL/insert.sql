@@ -18,6 +18,7 @@ DELETE FROM Stadiums;
 DELETE FROM Universities;
 
 -- Inserting 10 US Universities with corresponding stadiums
+-- Identifying University FOREIGN KEY ID's with IDENT_CURRENT()
 -- 1
 INSERT INTO Universities
   (name, university_type)
