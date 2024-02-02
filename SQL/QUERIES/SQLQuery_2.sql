@@ -1,8 +1,8 @@
 USE CompetitionsDataBase;
 
 -- Showing the previously created view
-SELECT *
-FROM HealthSciencesResults;
+-- SELECT *
+-- FROM HealthSciencesResults;
 
 -- 2. Using previously created view to sum points of single female athlete
 -- scored on that competition
