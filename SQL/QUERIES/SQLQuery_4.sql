@@ -4,7 +4,7 @@ USE CompetitionsDataBase;
 -- not all universities participated
 SELECT U.name, COUNT(R.registrationID) AS RegistrationCount
 FROM Registrations R
-LEFT JOIN Universities U
+JOIN Universities U
 ON U.universityID = R.universityID
 GROUP BY U.name
 ORDER BY RegistrationCount DESC;
